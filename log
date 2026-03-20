@@ -2,3 +2,24 @@ Fri Mar 20 05:39:01 PM UTC 2026:
  tests:  0|5
 total_score: 0/70
 f3efa6c
+Fri Mar 20 05:56:56 PM UTC 2026: 
+ exercises.c | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:79:19: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘*’ token
+   79 |    Stack* pilaAux * = CreateStack();
+      |                   ^
+exercises.c:79:21: error: expected expression before ‘=’ token
+   79 |    Stack* pilaAux * = CreateStack();
+      |                     ^
+exercises.c:79:23: error: implicit declaration of function ‘CreateStack’; did you mean ‘create_stack’? [-Wimplicit-function-declaration]
+   79 |    Stack* pilaAux * = CreateStack();
+      |                       ^~~~~~~~~~~
+      |                       create_stack
+exercises.c:82:15: error: ‘pilaAux’ undeclared (first use in this function)
+   82 |          push(pilaAux, top(P1));
+      |               ^~~~~~~
+exercises.c:82:15: note: each undeclared identifier is reported only once for each function it appears in
+f751f00
