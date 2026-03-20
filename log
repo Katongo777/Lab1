@@ -226,3 +226,13 @@ exercises.c:125:36: error: passing argument 2 of ‘strcmp’ makes pointer from
   156 | extern int strcmp (const char *__s1, const char *__s2)
       |                                      ~~~~~~~~~~~~^~~~
 c530583
+Fri Mar 20 08:15:49 PM UTC 2026: 
+ exercises.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:125:11: error: expected expression before ‘int’
+  125 |       if (int(cadena[i]) == '(')
+      |           ^~~
+963b1c8
