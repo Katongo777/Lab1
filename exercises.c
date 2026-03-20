@@ -43,6 +43,13 @@ Al finalizar retorna la lista creada.
 
 List* crea_lista() {
    List* L = create_list();
+   int *ptrNum;
+   for (int i = 1 ; i <= 10 ; i++)
+      {
+         ptrNum = (int *)malloc(sizeof(int));
+         *ptrNum = i;
+         pushFront(L, ptrNum);
+      }
    return L;
 }
 
