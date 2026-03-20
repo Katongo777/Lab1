@@ -23,3 +23,15 @@ exercises.c:82:15: error: ‘pilaAux’ undeclared (first use in this function)
       |               ^~~~~~~
 exercises.c:82:15: note: each undeclared identifier is reported only once for each function it appears in
 f751f00
+Fri Mar 20 05:57:27 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:79:21: error: implicit declaration of function ‘CreateStack’; did you mean ‘create_stack’? [-Wimplicit-function-declaration]
+   79 |    Stack* pilaAux = CreateStack();
+      |                     ^~~~~~~~~~~
+      |                     create_stack
+exercises.c:79:21: error: initialization of ‘Stack *’ {aka ‘List *’} from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+57c29e7
