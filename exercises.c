@@ -124,9 +124,12 @@ int parentesisBalanceados(char *cadena) {
    {  
       if ((int)(cadena[i]) == '(')
       {
-         if ((int)cadena[i] == ((int)cadena[k]) + 1) return 0;
+         if ((int)cadena[i] != ((int)cadena[k]) + 1) return 0;
       }
-      else if ((int)cadena[i] == ((int)cadena[k]) + 2) return 0;
+      else
+      {
+         if ((int)cadena[i] != ((int)cadena[k]) + 2) return 0;
+      }
       k--;
    }
    return 1;
