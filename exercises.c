@@ -63,7 +63,7 @@ int sumaLista(List *L) {
    int *actual = (int *)first(L);
    while (actual != NULL)
    {  
-      suma = *actual;
+      suma += *actual;
       actual = (int *)next(L);
    } 
    return suma;
