@@ -85,3 +85,20 @@ Fri Mar 20 07:38:31 PM UTC 2026:
  tests:  3|2
 total_score: 30/70
 4cc0aa6
+Fri Mar 20 07:41:50 PM UTC 2026: 
+ exercises.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:85:41: error: ‘l’ undeclared (first use in this function)
+   85 |       if ((*actual) == elem) popCurrent(l)
+      |                                         ^
+exercises.c:85:41: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:85:43: error: expected ‘;’ before ‘}’ token
+   85 |       if ((*actual) == elem) popCurrent(l)
+      |                                           ^
+      |                                           ;
+   86 |    }
+      |    ~                                       
+00c8e0f
