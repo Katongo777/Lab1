@@ -119,3 +119,35 @@ Fri Mar 20 07:44:16 PM UTC 2026:
  tests:  4|1
 total_score: 50/70
 1a32727
+Fri Mar 20 07:49:55 PM UTC 2026: 
+ exercises.c | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:120:16: error: implicit declaration of function ‘len’ [-Wimplicit-function-declaration]
+  120 |    int largo = len(cadena);
+      |                ^~~
+exercises.c:123:30: error: invalid operands to binary / (have ‘int (*)()’ and ‘int’)
+  123 |    for (int i = 0 ; i < (len / 2) ; i++)
+      |                          ~~~ ^
+      |                          |
+      |                          int (*)()
+exercises.c:125:25: error: passing argument 1 of ‘strcmp’ makes pointer from integer without a cast [-Wint-conversion]
+  125 |       if (!strcmp(cadena[i], cadena[k])) return 0;
+      |                   ~~~~~~^~~
+      |                         |
+      |                         char
+In file included from test.c:3:
+/nix/store/m3n0h7646c7qwf6dbvdqhslmxmv2dg3z-glibc-2.40-66-dev/include/string.h:156:32: note: expected ‘const char *’ but argument is of type ‘char’
+  156 | extern int strcmp (const char *__s1, const char *__s2)
+      |                    ~~~~~~~~~~~~^~~~
+exercises.c:125:36: error: passing argument 2 of ‘strcmp’ makes pointer from integer without a cast [-Wint-conversion]
+  125 |       if (!strcmp(cadena[i], cadena[k])) return 0;
+      |                              ~~~~~~^~~
+      |                                    |
+      |                                    char
+/nix/store/m3n0h7646c7qwf6dbvdqhslmxmv2dg3z-glibc-2.40-66-dev/include/string.h:156:50: note: expected ‘const char *’ but argument is of type ‘char’
+  156 | extern int strcmp (const char *__s1, const char *__s2)
+      |                                      ~~~~~~~~~~~~^~~~
+b1a6eb7
