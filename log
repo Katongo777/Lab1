@@ -47,3 +47,17 @@ Fri Mar 20 07:27:18 PM UTC 2026:
  tests:  2|3
 total_score: 20/70
 394bf0d
+Fri Mar 20 07:36:45 PM UTC 2026: 
+ exercises.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:66:20: error: dereferencing ‘void *’ pointer [-Werror]
+   66 |       suma = (int)(*actual);
+      |                    ^~~~~~~
+exercises.c:66:14: error: invalid use of void expression
+   66 |       suma = (int)(*actual);
+      |              ^
+cc1: all warnings being treated as errors
+c804793
